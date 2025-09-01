@@ -45,7 +45,7 @@ export default function Herosection() {
         >
           {/* Static Text */}
           <h1 className="sm:text-7xl text-2xl flex items-center justify-center text-white gap-x-4">
-            Hi, Sir{" "}
+            Hi, there{" "}
             <span className="inline-block sm:w-20 w-10 sm:h-20 h-10">
               <Lottie animationData={handAnimation} loop={true} />
             </span>{" "}

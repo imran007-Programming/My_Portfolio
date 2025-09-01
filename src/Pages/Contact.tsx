@@ -182,6 +182,15 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <div className="mt-6">
+  <p className="text-center text-lg font-medium text-gray-800">
+    Or reach me directly at{" "}
+    <a href="tel:+8801647153126" className="text-purple-700 underline">
+      +8801647153126
+    </a>
+  </p>
+</div>
+
       </motion.div>
 
       {/* ✅ Fullscreen success animation */}
