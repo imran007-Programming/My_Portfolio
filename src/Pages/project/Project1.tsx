@@ -1,6 +1,7 @@
 import { Badge } from "@/Components/ui/badge";
 import { Button } from "@/Components/ui/button";
 import percel from "../../assets/percel.png";
+
 export default function Project1() {
   return (
     <div className="flex flex-col md:flex-row  md:justify-between space-y-8 md:space-y-0">
@@ -71,6 +72,8 @@ export default function Project1() {
           </li>
         </ul>
 
+      
+
         {/* Bullet points about the website */}
         <div className="mt-8">
           <h4 className="text-2xl text-start font-semibold text-purple-500 mb-4">
@@ -103,13 +106,26 @@ export default function Project1() {
             >
               Live link
             </Button>
-            <Button 
-            onClick={() =>
-                window.open("https://github.com/imran007-Programming/PERCEL_DELIVERY_APP","_blank")
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://github.com/imran007-Programming/PERCEL_DELIVERY_APP",
+                  "_blank"
+                )
               }
-            className="cursor-pointer bg-gradient-to-r rounded-none from-purple-600 to-green-500">
+              className="cursor-pointer bg-gradient-to-r rounded-none from-purple-600 to-green-00"
+            >
               Github link
             </Button>
+              {/* Details Button */}
+        <div className="">
+          <Button
+            onClick={() => window.open("/project-details", "_self")}
+            className="cursor-pointer bg-gradient-to-r rounded-none from-blue-500 to-green-400"
+          >
+            Details
+          </Button>
+        </div>
           </div>
         </div>
       </div>

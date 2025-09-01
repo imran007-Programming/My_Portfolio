@@ -1,35 +1,10 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-// import Project2 from "./project/Project2";
 import Project1 from "./project/Project1";
+import Project2 from "./project/Project2";
 
 export default function Projects() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.5 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div id="projects" ref={sectionRef} className="py-16 container">
+    <div id="projects" className="py-16 container">
       <div className="max-w-7xl w-full px-6 space-y-16">
         {/* Title */}
         <h2 className="text-center sm:text-6xl text-4xl font-extrabold space-x-3">
@@ -43,9 +18,9 @@ export default function Projects() {
 
         {/* Animated Projects Section */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isVisible ? 1 : 0 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           className="space-y-12"
         >
           {/* Project Section 1 */}

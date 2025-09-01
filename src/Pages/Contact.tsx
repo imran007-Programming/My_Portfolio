@@ -100,7 +100,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
         transition={{ duration: 1.5 }}
-        className="bg-gradient-to-bl from-purple-300 to-pink-700 p-10 rounded-xl"
+        className="bg-gradient-to-bl from-purple-400 to-pink-300 p-10 rounded-xl"
       >
         <div className="rounded-xl shadow-lg p-8 max-w-5xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-10">
@@ -173,7 +173,7 @@ export default function Contact() {
 
                   <Button
                     type="submit"
-                    className="bg-gradient-to-b from-purple-600 to-pink-500 cursor-pointer rounded-none w-[50%]"
+                    className="bg-gradient-to-r from-purple-600 to-pink-500 cursor-pointer rounded-none w-[50%]"
                   >
                     Send Message
                   </Button>
