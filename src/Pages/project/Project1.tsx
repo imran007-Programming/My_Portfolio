@@ -97,7 +97,7 @@ export default function Project1() {
               deliveries.
             </li>
           </ul>
-          <div className="flex gap-x-6 mt-5">
+          <div className="flex flex-wrap  gap-6 mt-5">
             <Button
               onClick={() =>
                 window.open("https://percel-delievey-app.vercel.app/", "_blank")
